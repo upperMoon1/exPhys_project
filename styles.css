@@ -23,6 +23,7 @@ nav {
     display: flex;
     align-items: center;
     padding-right: 3rem;
+    color: #00a6fb;
 }
 .nav-bar {
     position: sticky;
@@ -70,4 +71,5 @@ padding: 1rem;
     background-size: cover;
     background-position: center;
     width: 100%;
+    position: fixed;
 }
