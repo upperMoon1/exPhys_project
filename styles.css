@@ -1,7 +1,43 @@
-.flex-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+body, html {
+    height:100vh;
 }
-.bcg-img {
-    position: relative;
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+}
+
+header {
+    grid-area: header;
+    background-color: #343434;
+}
+.headerLogo {
+    align-content: center;
+    align-items: center;
+    margin-top: .4rem;
+    margin-left: .4rem;
+}
+.welcome {
+ color: #00a6fb;
+    
+}
+
+aside {
+    grid-area: sidebar;
+    background-color:#7f7b82;
+}
+main {
+    grid-area: main;
+    background-color: blanchedalmond;
+}
+
+footer {
+    grid-area: footer;
+    background-color: cornsilk;
 }
