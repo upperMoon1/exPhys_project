@@ -16,7 +16,8 @@ grid-template-areas:
 header {
 grid-area: header;
 background-color: #343434;
-
+border-bottom: 5px solid #00a6fb;
+background: linear-gradient(to right, #343434, #7f7b82);
 }
 .fas {
   padding-left: 2.5rem;
@@ -25,15 +26,15 @@ background-color: #343434;
   text-shadow: .11rem .11rem #000;
 }
 h1 {
-  margin: auto;
   padding-left: 50%;
   display: inline;
   color: #00a6fb;
-  text-shadow: .1rem .1rem #000;
+  text-shadow: .1rem .1rem #000; 
 }
 .aside {
 grid-area: sidebar;
-background-color: lightgrey;
+background: linear-gradient(to bottom,#343434, #7f7b82);
+border-right: 5px solid #00a6fb;
 }
 .sideNav a {
   margin: auto;
@@ -57,7 +58,7 @@ background-color: lightgrey;
 }
 main {
 grid-area: main;
-background-color: blanchedalmond;
+background: linear-gradient(45deg,#383838, #7f7b82);
 }
 
 footer {
