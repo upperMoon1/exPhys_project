@@ -9,6 +9,7 @@ body, html {
 height:100vh;
 }
 body {
+background-image: url("woven-cloth-352481.jpg");
 font-family: 'Montserrat', sans-serif;
 display: grid;
 grid-template-columns: 20% 80%;
@@ -20,9 +21,6 @@ grid-template-areas:
 }
 .header {
 grid-area: header;
-background-color: #343434;
-border-bottom: 5px solid #00a6fb;
-background: linear-gradient(to right, #343434, #7f7b82);
 display: block;
 justify-content: space-around;
 position: sticky;
@@ -54,13 +52,11 @@ text-shadow: .1rem .1rem #000;
 }
 .aside {
 grid-area: sidebar;
-background: linear-gradient(to bottom,#343434, #7f7b82);
-border-right: 5px solid #00a6fb;
+background: transparent;
 overflow: auto;
 }
 .sideNav a {
   margin: auto;
-  justify-content: center;
   align-items: center;
   display: block;
   padding: 1rem;
@@ -70,6 +66,7 @@ overflow: auto;
   font-size: 1.5rem;
   font-weight: 800;
   text-shadow: .05rem .05rem black;
+  letter-spacing: .2rem;
 }
 .sideNav a:hover {
   color: #fff;
@@ -79,9 +76,9 @@ overflow: auto;
 }
 main {
 grid-area: main;
-background: linear-gradient(45deg,#383838, #7f7b82);
+background: transparent;
 }
 footer {
 grid-area: footer;
-background-color: cornsilk;
+background: transparent;
 }
