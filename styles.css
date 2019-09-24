@@ -4,15 +4,19 @@ box-sizing: border-box;
 
 body {
   height: 100vh;
+  width: 100%;
+  margin: 0;
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 7% 78% 5%;
   grid-template-areas: 
-  "header header"
-  "aside main"
-  "aside footer"
+  "header"
+  "nav"
+  "main"
+  "footer"
 }
 
 .header {
@@ -30,37 +34,40 @@ body {
 }
 
 .logo-container h1 {
-  color: #00a6fb;
+  color: white;
   text-shadow: 2px 2px 1px black;
 }
 
 i {
-  color: #00a6fb;
+  color: white;
   text-shadow: 2px 2px 1px black;
   padding-right: 1rem;
 }
 
-.aside {
-  grid-area: aside;
-  background-color:#77828c;
+.nav {
+  grid-area: nav;
   background: linear-gradient(#77828c, #241E4E);
+  display: absolute;
 }
 
-.side-nav {
+ul {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  background: linear-gradient(#77828c, #241E4E);
+  margin: auto;
+  padding-top: 1.5rem;
 }
 
 li a {
   display: inline-block;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-decoration: none;
   letter-spacing: .03rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   word-spacing: .5rem;
-  color: #00a6fb;
+  color: white;
   text-shadow: 2px 2px 1px black;
 }
 
@@ -79,93 +86,88 @@ li a:hover {
   text-shadow: 2px 2px 1px black;
 }
 
-@media screen and (max-width: 900px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 6% 74% 10%;
-    grid-template-areas: 
-    "header"
-    "aside"
-    "main"
-    "footer"
-  }
-
-  .side-nav {
-    flex-direction: row;
-    margin-top: 0;
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  li a {
-    padding: 15px;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .main {
-    margin-left: 0;
-    background: linear-gradient(#77828c, #241E4E);
-  }
-
-  img {
-    height: auto;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-.grid-container {
-  display: grid; 
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 6% 74% 10%;
-  grid-template-areas: 
-    "header"
-    "aside"
-    "main"
-    "footer"
-}
-
-.side-nav {
-      position: relative;
-      flex-direction: row;
-      width: 100%;
-} 
-
-li a {
-      text-align: center;
-      float: none;
-      flex-direction:
-}
-}
-
 .main  {
   grid-area: main;
   background: linear-gradient(#77828c, #241E4E);
-  position: relative;
   overflow: hidden;
 }
 
-img {
+.about-img {
   height: auto;
-  max-width: 100%;
-  display: block;
+  max-width: 100vw;
   opacity: .4;
-  position: absolute;
-  
-}
-.main-text {
-  position: absolute;
-  top: 3rem;
-  left: 5rem;
-  margin: auto;
+  overflow: hidden;
+  position: fixed;
 }
 
+.main-text {
+  position: relative;
+  font-size: 1.5rem;
+  top: 3rem;
+  left: 2rem;
+  text-align: center;
+  justify-content: center;
+}
 
 .footer {
   grid-area: footer;
   text-align: center;
   background: linear-gradient(85deg, #77828c, #241E4E);
+}
+.body-type-main {
+background-color: lightgray;
+}
+
+.body-type-h3 {
+  text-align: center;
+}
+
+.body-type-img {
+  height: auto;
+  max-width: 100vw;
+  width: 50%;
+  display: block;
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-type-grid-container {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 14.2%, 14.2%, 14.2%, 14.2%, 14.2%, 14.2%, 14.2%;
+  grid-template-areas: 
+  "div div div div div div div";
+  text-align: center;
+  padding-top: 5rem;
+}
+
+button {
+  background-color: #241e4e;
+  border: none;
+  color: white;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+background-color: #77828c;
+position: inherit;
+}
+
+#dropdown {
+  padding-left: .5rem;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
 }
