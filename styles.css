@@ -6,6 +6,7 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
+  font-family: montserrat;
 }
 
 .grid-container {
@@ -107,6 +108,7 @@ li a:hover {
   left: 2rem;
   text-align: center;
   justify-content: center;
+  color: white;
 }
 
 .footer {
@@ -169,5 +171,25 @@ position: inherit;
 }
 
 .dropdown:hover .dropdown-content {
- display: block;
+  display: block;
+}
+
+.risk-factors-main {
+  background: lightgray;
+}
+
+.risk-factors-h1 {
+  text-align: center;
+  text-shadow: 1px 1px  #77828c;
+  font-size: 3rem;
+}
+
+.risk-factors-main p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.risk-factors-list h2 {
+  text-align: center;
+  text-shadow: .8px .8px #77828c;
 }
