@@ -1,3 +1,25 @@
+@keyframes icon-animation {
+  0%{
+      transform: translateX(-500px);
+      }
+  50%{
+      transform: translateX(400px);
+      }
+  100%{
+      }
+}
+
+@keyframes active-link-animation {
+  0%{
+      }
+  50%{
+      transform: translateY(-15%);
+      }
+  100%{
+      transform: rotate(xx) translateY(15%);
+      }
+}
+
 * {
 box-sizing: border-box;
 }
@@ -43,12 +65,14 @@ i {
   color: white;
   text-shadow: 2px 2px 1px black;
   padding-right: 1rem;
+  animation: icon-animation 2.5s forwards 0s ease-in-out;
 }
 
 .nav {
   grid-area: nav;
   background: linear-gradient(#77828c, #241E4E);
   display: absolute;
+  position: sticky;
 }
 
 ul {
@@ -85,12 +109,12 @@ li a:hover {
   font-weight: 700;
   text-decoration: underline;
   text-shadow: 2px 2px 1px black;
+  animation: active-link-animation 1s infinite 0s ease-in-out;
 }
 
 .main  {
   grid-area: main;
   background: linear-gradient(#77828c, #241E4E);
-  overflow: hidden;
 }
 
 .about-img {
@@ -116,8 +140,14 @@ li a:hover {
   text-align: center;
   background: linear-gradient(85deg, #77828c, #241E4E);
 }
+
 .body-type-main {
 background-color: lightgray;
+}
+
+.body-type-main p {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .body-type-h3 {
@@ -192,4 +222,8 @@ position: inherit;
 .risk-factors-list h2 {
   text-align: center;
   text-shadow: .8px .8px #77828c;
+}
+
+.anatomy-main {
+  background-color: lightgray;
 }
