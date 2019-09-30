@@ -227,3 +227,86 @@ position: inherit;
 .anatomy-main {
   background-color: lightgray;
 }
+
+
+
+
+
+
+
+
+/*   Media Queries   */
+@media only screen and (max-width: 600px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 30% 55% 5%;
+}
+
+.nav {
+overflow: scroll;
+}
+
+ul {
+  display: block;
+  overflow: scroll;
+  line-height: .5em;
+}
+
+.main {
+  margin-top: 2.4rem;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-text {
+  text-align: start;
+  padding-left: 0;
+}
+
+.body-type-grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-type-main {
+  margin-top: 2.4rem;
+  overflow: scroll;
+}
+
+.body-type-img {
+  width: 100%;
+  height: auto;
+}
+
+.dropdown {
+  padding: 10em 0em;
+  display: block;
+  justify-content: center;
+  height: 125px;
+  width:400px;
+  margin: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: absolute;
+}
+
+.risk-factors-main {
+  padding-top: 2em;
+  height: 100%;
+  overflow: scroll;
+}
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .risk-factors-main {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 100%;
+  margin-top: .84rem;
+  }
+}
