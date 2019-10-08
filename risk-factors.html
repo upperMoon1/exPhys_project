@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500i&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d787529b01.js"></script>
+  <script src="script.js"></script>
 </head>
 <body class="grid-container">
   <header class= "header">
@@ -40,6 +41,166 @@
       </ol>
       <h2>Find your risk classification with our Risk Class Calculator!</h2>
     </div>
+    <form class= "risk-factors-form">
+      <h3 class="risk-factors-h3">Diagnosed Disease</h3>
+      <p class="risk-factors-p"><input type="checkbox" name="CVD" value="1"> Cardiovascular disease
+      </p>
+      <ul class= "risk-calc-ul">
+      <li>Cardiac, peripheral vascular, or cerebrovascular disease </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="PD" value="1"> Pulmonary disease
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Chronic obstructive pulmonary disease, asthma, interstitial lung disease, or cystic fibrosis </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="MD" value="1"> Metabolic disease
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Diabetes mellitus (type I or II), thyroid disorders, renal or liver disease </li>
+      </ul>
+      <h3 class="risk-factors-h3">Major Symptoms or Signs Suggestive of Cardiovascular and Pulmonary Disease</h3><p></p>The following signs and symptoms must be interpreted within the clinical context in which they appear since they are not all specific for metabolic, pulmonary, or cardiovascular disease.</p>
+      <p class="risk-factors-p"><input type="checkbox" name="Angina" value="1"> Pain or discomfort in the chest, neck, jaw, arms, or other areas that may be due to myocardial ischemia (lack of adequate circulation)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Breath" value="1"> Shortness of breath at rest, during daily activities, or with mild exertion
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Faint" value="1"> Dizziness or syncope (fainting)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Apnea" value="1"> Orthopnea (breathing discomfort when not in an upright position) or paroxysmal nocturnal dyspnea (interrupted breathing at night)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Edema" value="1"> Ankle edema (swelling)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Palp" value="1"> Palpitations (abnormal rapid beating of the heart) or tachycardia (rapid heart beat)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Claud" value="1"> Intermittent claudication (cramping pain and weakness in legs, especially calves, during walking due to inadequate blood supply to muscles)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Murmur" value="1"> Known heart murmur (atypical heart sound indicating a structural or functional abnormality)
+      </p>
+      <p class="risk-factors-p"><input type="checkbox" name="Fatigue" value="1"> Unusual or unexplained fatigue
+      </p>
+      <hr width="96%">
+      <h3 class="risk-factors-h3">Coronary Artery Disease Risk Factors</h3><p>The following risk factors should not be viewed as all inclusive.</p>
+      <p class="risk-factors-p"><input type="checkbox" name="Age" value="1"> Age
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Men &gt; 45 years </li>
+      <li>Women &gt; 55 or premature menopause without estrogen replacement therapy </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="BP" value="1"> Hypertension
+      </p>
+      <ul class="risk-calc-ul">
+      <li><a href="Vitals">High blood pressure</a> confirmed by measurement on at least two separate occasions
+      <ul class="risk-calc-ul">
+      <li>Systolic blood pressure: 140 mmHg or greater </li>
+      <li>Diastolic blood pressure: 90 mmHg or greater </li>
+      </ul></li>
+      <li>Using Antihypertensive medication </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="Chol" value="1"> Hypercholesterolemia
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Low Density lipoprotein: &gt; 130 mg/dL (3.4 mmol/L)
+      <ul class="risk-calc-ul">
+      <li>If low density lipoprotein is not available, use total cholesterol criteria instead: </li>
+      <li>Total serum cholesterol: &gt;200 mg/dl (5.2 mmol/L) </li>
+      </ul></li>
+      <li>High-density lipoprotein cholesterol: &lt;40 mg/dl (1.03 mmol/L) </li>
+      <li>Using lipid-lowering medication </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="HDL" value="-1"><p>High serum HDL cholesterol (negative risk factor)</p>
+      </p>
+      <ul class="risk-calc-ul">
+      <li>&gt;60 mg/dL (1.6 mmol/L)
+      <ul class="risk-calc-ul">
+      <li>High serum HDL cholesterol decreases the risk of coronary artery disease </li>
+      <li>Subtracts one risk factor from sum of positive risk factors above </li>
+      </ul></li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="Glucose" value="1"> Impaired fasting glucose
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Fasting blood glucose: 100 mg/dL (5.6 mmol/L) or greater confirmed by measurements on at least 2 separate occasions </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="Fat" value="1"> Obesity
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Exercise professionals should use clinical judgment when evaluating this risk factor </li>
+      <li>Professional opinions vary regarding the most appropriate markers and thresholds for obesity
+      <ul class="risk-calc-ul"> 
+      <li><a href="BMI">Body Mass Index</a> of 30 kg/m2 or greater </li>
+      <li><a href="WaistHipRatio">Waist Hip Ratio</a> greater than 0.95 (men) and 0.86 (women) </li>
+      <li><a href="../Testing/OtherTests#Waist">Waist girth</a> greater than 102 cm (men) and 88 cm (women) </li>
+      </ul></li>
+      </ul>
+      <p><input type="checkbox" name="Act" value="1"> Sedentary Lifestyle
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Not participating in a regular exercise program </li>
+      <li>Not accumulating 30 minutes or more of <a href="#Moderate">moderate physical activity</a> on most days of the week </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="Smoke" value="1"> Smoking
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Current cigarette smoker </li>
+      <li>Quit within previous 6 months </li>
+      </ul>
+      <p class="risk-factors-p"><input type="checkbox" name="FH" value="1"> Family History
+      </p>
+      <ul class="risk-calc-ul">
+      <li>Myocardial infarction, coronary revascularization, or sudden death
+      <ul class="risk-calc-ul">
+      <li>before 55 years of age in father or other male first degree relative (ie, brother or son) </li>
+      <li>before 65 years of age in mother or other female first degree relative (ie, sister or daughter) </li>
+      </ul></li>
+      </ul>
+      <table width="100%" cellspacing="0" cellpadding="3" class="StackTable">
+      <tbody>
+      <tr>
+      <td colspan="2"><input type="button" value="Calculate" onclick="calc(this.form)"><input type="reset" value="Reset" name="Reset">>
+      </td>
+      <td><input name="Risk" type="text" size="13"> Risk
+      </td>
+      </tr>
+      <tr>
+      <td colspan="3" Current (within past year) medical examination and exercise testing before participation:></td>
+      </td>
+      </tr>
+      <tr>
+      <td colspan="2"><input name="Mod" type="text" size="25"> Moderate Exercise
+      </td>
+      <td width="50%"><input name="Vig" type="text" size="25"> Vigorous Exercise
+      </td>
+      </tr>
+      <tr>
+      <td colspan="3" Physician supervision of exercise tests:>
+      </td>
+      </tr>
+      <tr>
+      <td colspan="2"><input name="Sub" type="text" size="25"> Submaximal Test
+      </td>
+      <td width="50%"><input name="Max" type="text" size="25"> Maximal Test
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p><a name="Moderate"></a>Moderate activity
+      </p>
+      <ul class="risk-calc-ul">
+      <li>intensity comfortably sustainable for about 45 minutes </li>
+      <li>approximately 3-6 METs: equivalent to walking 3-4 mph (4.8-6.5 kmph) </li>
+      <li>40%-60% of maximal oxygen uptake </li>
+      </ul>
+      <p>Vigorous activity
+      </p>
+      <ul class="risk-calc-ul">
+      <li>produces substantial cardiorespiratory challenge </li>
+      <li>greater than 6 METs: running or walking faster than 4 mph (&gt;6.5 kmph) </li>
+      <li>greater than 60% of maximal oxygen uptake </li>
+      </ul><i>ACSM (2013). Participation Health Screening, ACSM Guidelines for Exercise Testing and Prescription, 9th ed. Lippincott, Williams, and Wilkins, 19-38.</i>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      </form>
   </main>
   <footer class="footer">
     <p>Website designed by Max D. Clark<br>2019</p>

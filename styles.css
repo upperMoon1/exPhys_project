@@ -206,6 +206,13 @@ position: inherit;
 
 .risk-factors-main {
   background: lightgray;
+  overflow: scroll;
+}
+
+.risk-factors-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .risk-factors-h1 {
@@ -228,7 +235,20 @@ position: inherit;
   background-color: lightgray;
 }
 
+.risk-calc-ul {
+  background: lightgray;
+}
 
+.risk-factors-h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.risk-factors-p {
+  position: relative;
+  float: left;
+  display: block;
+}
 
 
 
@@ -254,15 +274,15 @@ ul {
 }
 
 .main {
-  margin-top: 2.4rem;
+  margin-top: 4rem;
   height: 100%;
   width: 100vw;
   overflow: hidden;
 }
 
 .main-text {
-  text-align: start;
-  padding-left: 0;
+  text-align: center;
+  padding-right: 2.4em;
 }
 
 .body-type-grid-container {
